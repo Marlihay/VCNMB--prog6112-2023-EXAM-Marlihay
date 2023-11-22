@@ -307,9 +307,9 @@ public class EstateAgentGUI extends javax.swing.JFrame {
     // Save the report to a text file named report.txt
     try (PrintWriter writer = new PrintWriter("report.txt")) {
         writer.print(reportContent.toString());
-        JOptionPane.showMessageDialog(this, "Report saved to report.txt", "Save Report", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this, "Report saved successfully.", "Save Report", JOptionPane.INFORMATION_MESSAGE);
     } catch (FileNotFoundException e) {
-        JOptionPane.showMessageDialog(this, "Error saving report: " + e.getMessage(), "Save Report Error", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(this, "There was an error saving this report " + e.getMessage(), "Save Report Error", JOptionPane.ERROR_MESSAGE);
     }}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -336,3 +336,4 @@ public class EstateAgentGUI extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 }
  //Farrell, J. (2019). Java programming. Boston: Cengage.
+//www.youtube.com. VCSOIT. (2020). PROG6112 LU1-LU6

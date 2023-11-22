@@ -57,7 +57,7 @@ public class EstateAgentReport {
 // go through the monthly sales and print each sale
     for (double sale : monthlySales) {
 // Format and print each sale with a width of 15 characters
-        System.out.printf("%-15.2f", sale);
+         System.out.printf("%,.2f, ", sale);
     }
 
     System.out.println();
@@ -65,13 +65,13 @@ public class EstateAgentReport {
  //method which gets the total property sales and displays them     
      
       private static void totalSales(EstateAgent agent) {
-        System.out.println(agent.getTotalPropertySales());
+      System.out.printf("%,.2f\n", agent.getTotalPropertySales());
     }
- //method for displaying the commission               
+ //method for displaying the commission                
     private static void displayCommission(EstateAgent agent) {
-        System.out.println(": R " + agent.getAgentCommission());
+         System.out.printf(": R %,.2f\n", agent.getAgentCommission());;
     }
     }
-       
+    //GeeksforGeeks. (2018). Format Specifiers in Java. [online] Available at: https://www.geeksforgeeks.org/format-specifiers-in-java/.   
    //Farrell, J. (2019). Java programming. Boston: Cengage.   
-
+   //www.youtube.com. VCSOIT. (2020). PROG6112 LU1-LU6
